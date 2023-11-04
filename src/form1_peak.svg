@@ -1,62 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
-
-function animaForm1() {
-  // alert("ok...");
-
-  const groupForm = document.getElementById("form_subForm1");
-  groupForm.style.transition = "transform 0.5s ease-in-out";
-  groupForm.style.transform = "translateY(200px)";
-
-  // bt avancar
-  const groupFormAvancar = document.getElementById("Group_buttonAvancar");
-  groupFormAvancar.style.transition = "transform 0.5s ease-in-out";
-  groupFormAvancar.style.transform = "translateY(200px)";
-
-
-
-}
-
-function verificaCPFInserido(){
-
-  if(document.getElementById("senha_de_email").innerHTML.length == 11){
-      alert("inseriu um cpf...!")
-      console.log('insewriu um  CPF....');
-  };
-
-}
-
-function App() {
-
-  return (
-    <div className="App">
-      <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"  width="770" height="770" viewBox="0 0 770 425">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="770" height="425" viewBox="0 0 770 425">
   <defs>
     <filter id="Rectangle_23" x="16" y="5" width="754" height="420" filterUnits="userSpaceOnUse">
       <feOffset dx="8" dy="8" input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="21.5" result="blur"/>
-      <feFlood floodColor="#002b57" floodOpacity="0.278"/>
+      <feFlood flood-color="#002b57" flood-opacity="0.278"/>
       <feComposite operator="in" in2="blur"/>
       <feComposite in="SourceGraphic"/>
     </filter>
     <filter id="Rectangle_21" x="0" y="0" width="754" height="420" filterUnits="userSpaceOnUse">
       <feOffset dx="-8" dy="3" input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="21.5" result="blur-2"/>
-      <feFlood floodColor="#fff"/>
+      <feFlood flood-color="#fff"/>
       <feComposite operator="in" in2="blur-2"/>
       <feComposite in="SourceGraphic"/>
     </filter>
     <filter id="Rectangle_15" x="63.5" y="49.5" width="643" height="309" filterUnits="userSpaceOnUse">
       <feOffset dy="3" input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="3" result="blur-3"/>
-      <feFlood floodOpacity="0.161"/>
+      <feFlood flood-opacity="0.161"/>
       <feComposite operator="in" in2="blur-3"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <filter id="Cadastro">
+    <filter id="Emprestimo">
       <feOffset dy="3" input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="3" result="blur-4"/>
-      <feFlood floodOpacity="0.302" result="color"/>
+      <feFlood flood-opacity="0.302" result="color"/>
       <feComposite operator="out" in="SourceGraphic" in2="blur-4"/>
       <feComposite operator="in" in="color"/>
       <feComposite operator="in" in2="SourceGraphic"/>
@@ -64,14 +32,14 @@ function App() {
     <filter id="Path_7" x="63.5" y="55.5" width="643" height="321" filterUnits="userSpaceOnUse">
       <feOffset dy="3" input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="3" result="blur-5"/>
-      <feFlood floodOpacity="0.161"/>
+      <feFlood flood-opacity="0.161"/>
       <feComposite operator="in" in2="blur-5"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <filter id="ativa_Invest">
+    <filter id="Peak_Invest">
       <feOffset dy="3" input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="3" result="blur-6"/>
-      <feFlood floodOpacity="0.302" result="color-2"/>
+      <feFlood flood-opacity="0.302" result="color-2"/>
       <feComposite operator="out" in="SourceGraphic" in2="blur-6"/>
       <feComposite operator="in" in="color-2"/>
       <feComposite operator="in" in2="SourceGraphic"/>
@@ -79,58 +47,42 @@ function App() {
     <filter id="Rectangle_19" x="409.5" y="306.5" width="278" height="98" filterUnits="userSpaceOnUse">
       <feOffset dy="3" input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="3" result="blur-7"/>
-      <feFlood floodColor="#0e25bc" floodOpacity="0.4"/>
+      <feFlood flood-color="#0e25bc" flood-opacity="0.4"/>
       <feComposite operator="in" in2="blur-7"/>
       <feComposite in="SourceGraphic"/>
     </filter>
   </defs>
-  <g id="form1_ativa" transform="translate(-409.5 -83.5)">
-
+  <g id="form1_peak" transform="translate(-409.5 -83.5)">
     <g transform="matrix(1, 0, 0, 1, 409.5, 83.5)" filter="url(#Rectangle_23)">
-
       <rect id="Rectangle_23-2" data-name="Rectangle 23" width="625" height="291" rx="28" transform="translate(72.5 61.5)" fill="#fff"/>
-
     </g>
     <g transform="matrix(1, 0, 0, 1, 409.5, 83.5)" filter="url(#Rectangle_21)">
       <rect id="Rectangle_21-2" data-name="Rectangle 21" width="625" height="291" rx="28" transform="translate(72.5 61.5)" fill="#fff"/>
     </g>
     <g id="form_subForm1" transform="translate(0 -3)">
-
       <g transform="matrix(1, 0, 0, 1, 409.5, 86.5)" filter="url(#Rectangle_15)">
-
         <rect id="Rectangle_15-2" data-name="Rectangle 15" width="625" height="291" rx="28" transform="translate(72.5 55.5)" fill="#fff"/>
-
       </g>
-      <text id="RESULTADO" data-name="RESULTADO:" transform="translate(601 293)" fontSize="12" fontFamily="SegoeUI, Segoe UI"><tspan x="-70.989" y="69">Ao se cadastrar voce concorda com nosso termo de uso. </tspan></text>
-      <g id="Rectangle_28" data-name="Rectangle 28" transform="translate(524 297)" fill="#fff" stroke="#dfdfdf" strokeWidth="1">
-      <foreignObject x="0" y="0" width="220" height="43">
-          <input type="text" style={{ width: '100%', height: '100%', padding: '5px', border:'none'  }} placeholder="seu@e-mail.com" />
-        </foreignObject>
-        <rect x="0.5" y="0.5" width="219" height="42" rx="8.5" fill="none"/>
+      <g id="Rectangle_28" data-name="Rectangle 28" transform="translate(524 297)" fill="#fff" stroke="#dfdfdf" stroke-width="1">
+        <rect width="170" height="43" rx="9" stroke="none"/>
+        <rect x="0.5" y="0.5" width="169" height="42" rx="8.5" fill="none"/>
       </g>
-      <text id="Valor do empréstimo:" data-name="Informe seu e-mail:" transform="translate(601 293)" fontSize="17" fontFamily="SegoeUI, Segoe UI"><tspan x="-74.989" y="0">Informe seu e-mail:</tspan></text>
-      <g id="Rectangle_29" data-name="Rectangle 29" transform="translate(759 297)" fill="#fff" stroke="#dfdfdf" strokeWidth="1">
-
-      <foreignObject x="0" y="0" width="185" height="43">
-          <input id="senha_de_email" type="text" style={{ width: '100%', height: '100%', padding: '5px', border:'none' }} placeholder="********" onChange={verificaCPFInserido} />
-        </foreignObject>
-        <rect x="0.5" y="0.5" width="186" height="42" rx="8.5" fill="none"/>
+      <text id="CPF_do_destinatario:" data-name="CPF do destinatario:" transform="translate(601 293)" font-size="17" font-family="SegoeUI, Segoe UI"><tspan x="-74.989" y="0">CPF do destinatario:</tspan></text>
+      <g id="Rectangle_29" data-name="Rectangle 29" transform="translate(711 297)" fill="#fff" stroke="#dfdfdf" stroke-width="1">
+        <rect width="170" height="43" rx="9" stroke="none"/>
+        <rect x="0.5" y="0.5" width="169" height="42" rx="8.5" fill="none"/>
       </g>
-      <text id="CPF_tomador" data-name="Para quem:" transform="translate(780 293)" fontSize="17" fontFamily="SegoeUI, Segoe UI"><tspan x="-15.185" y="0">Crie uma senha:</tspan></text>
-      <g id="Rectangle_30" data-name="Rectangle 30" transform="translate(955 297)" fill="#fff" stroke="#dfdfdf" strokeWidth="1">
-
-
-      <foreignObject x="0" y="0" width="110" height="43">
-          <input type="date" style={{ width: '90%', height: '100%', padding: '5px' , border:'none' }}  />
-        </foreignObject>
-        <rect x="0.5" y="0.5" width="109" height="42" rx="8.5" fill="none"/>
+      <text id="QTD_de_parcelas" data-name="QTD de parcelas" transform="translate(780 293)" font-size="17" font-family="SegoeUI, Segoe UI"><tspan x="-61.185" y="0">QTD de parcelas</tspan></text>
+      <g id="Rectangle_30" data-name="Rectangle 30" transform="translate(898 297)" fill="#fff" stroke="#dfdfdf" stroke-width="1">
+        <rect width="170" height="43" rx="9" stroke="none"/>
+        <rect x="0.5" y="0.5" width="169" height="42" rx="8.5" fill="none"/>
       </g>
-      <text id="Data Nasc.:_" data-name="Data Nasc.:" transform="translate(945 293)" fontSize="17" fontFamily="SegoeUI, Segoe UI"><tspan x="17.334" y="0">Data Nasc.:</tspan></text>
-      <rect id="Rectangle_31" data-name="Rectangle 31" width="294" height="84" rx="42" transform="translate(797 165)" fill="#f2f2f2"/>
+      <text id="Taxa_" data-name="Taxa %" transform="translate(933 293)" font-size="17" font-family="SegoeUI, Segoe UI"><tspan x="-25.334" y="0">Taxa %</tspan></text>
+      <rect id="Rectangle_31" data-name="Rectangle 31" width="294" height="84" rx="42" transform="translate(797 165)" fill="#fbfbfb"/>
       <g data-type="innerShadowGroup">
-        <text id="Cadastro-2" data-name="Cadastro" transform="translate(947 223)" fill="#cccccc" fontSize="33" fontFamily="SegoeUI, Segoe UI"><tspan x="-87.092" y="0">Cadastro</tspan></text>
-        <g transform="matrix(1, 0, 0, 1, 409.5, 86.5)" filter="url(#Cadastro)">
-          <text id="Cadastro-3" data-name="Cadastro" transform="translate(537.5 136.5)" fill="#fff" fontSize="33" fontFamily="SegoeUI, Segoe UI"><tspan x="-87.092" y="0">Cadastro</tspan></text>
+        <text id="Emprestimo-2" data-name="Emprestimo" transform="translate(947 223)" fill="#e2e2e2" font-size="33" font-family="SegoeUI, Segoe UI"><tspan x="-87.092" y="0">Emprestimo</tspan></text>
+        <g transform="matrix(1, 0, 0, 1, 409.5, 86.5)" filter="url(#Emprestimo)">
+          <text id="Emprestimo-3" data-name="Emprestimo" transform="translate(537.5 136.5)" fill="#fff" font-size="33" font-family="SegoeUI, Segoe UI"><tspan x="-87.092" y="0">Emprestimo</tspan></text>
         </g>
       </g>
     </g>
@@ -142,44 +94,31 @@ function App() {
         </g>
       </g>
       <g data-type="innerShadowGroup">
-        <text id="ativa_Invest-2" data-name="ativa Invest" transform="translate(591 418)" fill="#e2e2e2" fontSize="33" fontFamily="SegoeUI, Segoe UI"><tspan x="-81.227" y="0">Ativa Invest</tspan></text>
-        <g transform="matrix(1, 0, 0, 1, 409.5, 83.5)" filter="url(#ativa_Invest)">
-          <text id="ativa_Invest-3" data-name="ativa Invest" transform="translate(181.5 334.5)" fill="#fff" fontSize="33" fontFamily="SegoeUI, Segoe UI"><tspan x="-81.227" y="0">Ativa Invest</tspan></text>
+        <text id="Peak_Invest-2" data-name="Peak Invest" transform="translate(591 418)" fill="#e2e2e2" font-size="33" font-family="SegoeUI, Segoe UI"><tspan x="-81.227" y="0">Peak Invest</tspan></text>
+        <g transform="matrix(1, 0, 0, 1, 409.5, 83.5)" filter="url(#Peak_Invest)">
+          <text id="Peak_Invest-3" data-name="Peak Invest" transform="translate(181.5 334.5)" fill="#fff" font-size="33" font-family="SegoeUI, Segoe UI"><tspan x="-81.227" y="0">Peak Invest</tspan></text>
         </g>
       </g>
-      <g id="Rectangle_17" data-name="Rectangle 17" transform="translate(742 206)" fill="#fff" stroke="#dfdfdf" strokeWidth="1">
-        <foreignObject x="0" y="0" width="329" height="43">
-          <input type="text" style={{ width: '100%', height: '100%', padding: '5px', border:'none'  }} placeholder="CPF ou CNPJ" />
-        </foreignObject>
+      <g id="Rectangle_17" data-name="Rectangle 17" transform="translate(742 206)" fill="#fff" stroke="#dfdfdf" stroke-width="1">
+        <rect width="329" height="43" rx="9" stroke="none"/>
         <rect x="0.5" y="0.5" width="328" height="42" rx="8.5" fill="none"/>
       </g>
-      <g id="Rectangle_18" data-name="Rectangle 18" transform="translate(742 278)" fill="#fff" stroke="#dfdfdf" strokeWidth="1">
-        <foreignObject x="0" y="0" width="329" height="43">
-          <input type="text" style={{ width: '100%', height: '100%', padding: '5px', border:'none'  }} placeholder="numero de whatsApp" />
-        </foreignObject>
-        <rect x="0.5" y="0.5" width="328" height="45" rx="8.5" fill="none"/>
+      <g id="Rectangle_18" data-name="Rectangle 18" transform="translate(742 278)" fill="#fff" stroke="#dfdfdf" stroke-width="1">
+        <rect width="329" height="43" rx="9" stroke="none"/>
+        <rect x="0.5" y="0.5" width="328" height="42" rx="8.5" fill="none"/>
       </g>
-      <text id="Informe_seu_CPF_ou_CNPJ" data-name="Informe seu CPF ou CNPJ" transform="translate(836 202)" fontSize="17" fontFamily="SegoeUI, Segoe UI"><tspan x="-94.455" y="0">Informe seu CPF ou CNPJ</tspan></text>
-      <text id="Seu_n_umero_de_WhatsApp" data-name="Seu numero de WhatsApp" transform="translate(843 274)" fontSize="17" fontFamily="SegoeUI, Segoe UI"><tspan x="-101.133" y="0">Seu número de WhatsApp</tspan></text>
+      <text id="Informe_seu_CPF_ou_CNPJ" data-name="Informe seu CPF ou CNPJ" transform="translate(836 202)" font-size="17" font-family="SegoeUI, Segoe UI"><tspan x="-94.455" y="0">Informe seu CPF ou CNPJ</tspan></text>
+      <text id="Seu_n_umero_de_WhatsApp" data-name="Seu n[umero de WhatsApp" transform="translate(843 274)" font-size="17" font-family="SegoeUI, Segoe UI"><tspan x="-101.133" y="0">Seu n[umero de WhatsApp</tspan></text>
     </g>
-    <g id="Group_buttonAvancar" style={{cursor:'pointer'}} onClick={animaForm1}>
+    <g id="Group_buttonAvancar">
       <g id="Group_5" data-name="Group 5" transform="translate(0 -249)">
         <g transform="matrix(1, 0, 0, 1, 409.5, 332.5)" filter="url(#Rectangle_19)">
-          <rect id="Rectangle_19-2" data-name="Rectangle 19" width="260" height="80" rx="40" transform="translate(418.5 312.5)" fill="#B8E500"/>
+          <rect id="Rectangle_19-2" data-name="Rectangle 19" width="260" height="80" rx="40" transform="translate(418.5 312.5)" fill="#043260"/>
         </g>
-        <text id="Avancar" transform="translate(958 682)" fill="#fff" fontSize="34" fontFamily="SegoeUI, Segoe UI"><tspan x="-59.458" y="0">Avançar</tspan></text>
-        <text id="na_ativa_Invest" data-name="na ativa Invest" transform="translate(958 706)" fill="#fff" fontSize="14" fontFamily="SegoeUI, Segoe UI"><tspan x="-43.9" y="0">na Ativa Invest</tspan></text>
+        <text id="Avancar" transform="translate(958 682)" fill="#fff" font-size="34" font-family="SegoeUI, Segoe UI"><tspan x="-59.458" y="0">Avancar</tspan></text>
+        <text id="na_Peak_Invest" data-name="na Peak Invest" transform="translate(958 706)" fill="#fff" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="-43.9" y="0">na Peak Invest</tspan></text>
       </g>
     </g>
-
-    <text id="Emprestar_dinheiro_em_3_etapas_rapidas:" data-name="Emprestar dinheiro em 3 etapas rapidas:" transform="translate(796 127)" fill="#002b57" fontSize="33" fontFamily="SegoeUI, Segoe UI"><tspan x="-310.327" y="0">Cadastre-se e ative seu sucesso financeiro:</tspan></text>
-
+    <text id="Emprestar_dinheiro_em_3_etapas_rapidas:" data-name="Emprestar dinheiro em 3 etapas rapidas:" transform="translate(796 127)" fill="#002b57" font-size="33" font-family="SegoeUI, Segoe UI"><tspan x="-292.327" y="0">Emprestar dinheiro em 3 etapas rapidas:</tspan></text>
   </g>
 </svg>
-
-
-    </div>
-  );
-}
-
-export default App;
